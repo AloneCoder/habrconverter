@@ -7,21 +7,6 @@
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <script type="text/javascript" src="habrconverter.js"></script>
       <script src="https://rawcdn.githack.com/zenorocha/clipboard.js/v2.0.4/dist/clipboard.min.js"></script>
-      <script type="text/javascript">
-         new ClipboardJS('.btn-copy');
-         
-         function clearInput() {
-             document.getElementById('rich-input').innerHTML = '';
-         }
-         
-         function convertInput() {
-             document.getElementById('habr-output').value = habrconverter.convert(document.getElementById('rich-input'));
-         }
-         
-         function clearOutput() {
-             document.getElementById('habr-output').value = '';
-         }
-      </script>
    </head>
    <body>
       <div class="container">
@@ -66,5 +51,20 @@
             <textarea id="habr-output" readonly onclick="this.focus(); this.select();"></textarea>
          </div>
       </div>
+      <script type="text/javascript">
+         new ClipboardJS('.btn-copy');
+         
+         function clearInput() {
+             document.getElementById('rich-input').innerHTML = '';
+         }
+         
+         function convertInput() {
+             document.getElementById('habr-output').value = habrconverter.convert(document.getElementById('rich-input'));
+         }
+         
+         function clearOutput() {
+             document.getElementById('habr-output').value = '';
+         }
+      </script>
    </body>
 </html>
