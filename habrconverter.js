@@ -27,6 +27,7 @@ habrconverter = (function () {
             monospace: {open: '<code>', close: '</code>'}
         }, NEW_LINE_AFTER_CLOSE_TAG = {
             table: true,
+            td: true,
             ul: true,
             ol: true,
             li: true,
