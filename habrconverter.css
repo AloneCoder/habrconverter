@@ -8,6 +8,7 @@
 
 #rich-input {
     cursor: auto !important;
+    overflow: hidden;
 }
 
 div.inputs-layout {
