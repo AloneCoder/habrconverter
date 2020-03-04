@@ -17,9 +17,8 @@
       </script>
    </head>
    <body>
-      <div class="container-fluid">
+      <div class="container">
          <h1>Хабрконвертер</h1>
-         <div class="row-fluid">
             <p>
                Хабрконвертер преобразует текст, созданный в текстовом процессоре (Google Docs, Word или любом другом) в
                размеченный текст, пригодный для публикации статьи на хабре.
@@ -37,17 +36,18 @@
                Проверьте статью внимательно перед тем как ее публиковать!
             </p>
          </div>
-         <div class="row-fluid">
+         <div class="container">
             <div class="buttons">
                <button class="btn btn-success" onclick="convertInput()">Конвертировать</button>
                <button class="btn btn-warning" onclick="clearInput()">Очистить</button>
             </div>
          </div>
-         <div class="row-fluid">
+         
+         <div class="container">
             <div class="block-description">Скопируйте сюда текст для конвертации</div>
-            <div class="uneditable-input" id="rich-input" contenteditable="true"></div>
+            <textarea class="uneditable-input" id="rich-input"></textarea>
          </div>
-         <div class="row-fluid">
+         <div class="container">
             <div class="block-description">При клике автоматически выделится весь результат</div>
             <textarea id="habr-output" readonly onclick="this.focus(); this.select();"></textarea>
          </div>
