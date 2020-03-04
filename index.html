@@ -36,6 +36,7 @@
                Проверьте статью внимательно перед тем как ее публиковать!
             </p>
          </div>
+
          <div class="container">
             <div class="buttons">
                <button class="btn btn-success" onclick="convertInput()">Конвертировать</button>
@@ -45,8 +46,9 @@
          
          <div class="container">
             <div class="block-description">Скопируйте сюда текст для конвертации</div>
-            <textarea class="uneditable-input" id="rich-input"></textarea>
+            <div class="uneditable-input" id="rich-input" contenteditable="true"></div>
          </div>
+
          <div class="container">
             <div class="block-description">При клике автоматически выделится весь результат</div>
             <textarea id="habr-output" readonly onclick="this.focus(); this.select();"></textarea>
