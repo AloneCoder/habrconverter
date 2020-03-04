@@ -6,13 +6,20 @@
       <link rel="stylesheet" href="habrconverter.css">
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <script type="text/javascript" src="habrconverter.js"></script>
+      <script src="https://rawcdn.githack.com/zenorocha/clipboard.js/v2.0.4/dist/clipboard.min.js"></script>
       <script type="text/javascript">
+         new ClipboardJS('[data-clipboard-target]');
+         
          function clearInput() {
              document.getElementById('rich-input').innerHTML = '';
          }
          
          function convertInput() {
              document.getElementById('habr-output').value = habrconverter.convert(document.getElementById('rich-input'));
+         }
+         
+         function clearOutput() {
+             document.getElementById('habra-output').value = '';
          }
       </script>
    </head>
@@ -48,7 +55,12 @@
             <div class="block-description">Скопируйте сюда текст для конвертации</div>
             <div class="uneditable-input" id="rich-input" contenteditable="true"></div>
          </div>
-
+         <div class="container">
+            <div class="buttons">
+                <button class="btn btn-primary" data-clipboard-target="#habra-output">Копировать</button>
+                <button class="btn" onclick="clearOutput()">Очистить</button>
+            </div>
+        </div>
          <div class="container">
             <div class="block-description">При клике автоматически выделится весь результат</div>
             <textarea id="habr-output" readonly onclick="this.focus(); this.select();"></textarea>
