@@ -8,7 +8,7 @@
       <script type="text/javascript" src="habrconverter.js"></script>
       <script src="https://rawcdn.githack.com/zenorocha/clipboard.js/v2.0.4/dist/clipboard.min.js"></script>
       <script type="text/javascript">
-         new ClipboardJS('[data-clipboard-target]');
+         new ClipboardJS('.btn-copy');
          
          function clearInput() {
              document.getElementById('rich-input').innerHTML = '';
@@ -57,8 +57,8 @@
          </div>
          <div class="container">
             <div class="buttons">
-                <button class="btn btn-primary" data-clipboard-target="#habr-output">Копировать</button>
-                <button class="btn" onclick="clearOutput()">Очистить</button>
+                <button class="btn btn-primary btn-copy" data-clipboard-target="#habr-output">Копировать</button>
+                <button class="btn btn-warning" onclick="clearOutput()">Очистить</button>
             </div>
         </div>
          <div class="container">
