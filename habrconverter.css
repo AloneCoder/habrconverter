@@ -26,6 +26,10 @@ div.inputs-layout > div {
     float: left;
 }
 
+.buttons {
+    margin: 10px 0px;
+}
+
 footer {
     text-align: right;
     color: #aaa;
